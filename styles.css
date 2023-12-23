@@ -1,0 +1,108 @@
+img {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-right: 20px;
+  color: black
+}
+h1 {
+  font-family: 'Butterfly Kids', cursive;
+  font-size: 7rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.r1 {
+  color: #EB5353;
+}
+.r2 {
+  color: #F9D923;
+}
+.r3 {
+  color: #36AE7C;
+}
+.r4 {
+  color: #187498;
+}
+.r5 {
+  color: #FF4B91;
+}
+
+.drum-kit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  flex-basis: 0 0 auto;
+  margin-bottom: 50px;
+}
+
+.drum {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: start;
+  font-family: 'Butterfly Kids', cursive;
+  font-size: xxx-large;
+  font-weight: bolder;
+  color: #187498;
+
+}
+
+.a {
+  border:#187498 solid 7px;
+  background-image: url(./assets/img/images/crash.png);
+  background-repeat: no-repeat;
+}
+.s {
+  border: #EB5353 solid 7px;
+  background-image: url(./assets/img/images/kick.png);
+  background-repeat: no-repeat;
+}
+.d {
+  border: #36AE7C solid 7px;
+  background-image: url(./assets/img/images/snare.png);
+  background-repeat: no-repeat;
+}
+.f {
+  border: #F9D923 solid 7px;
+  background-image: url(./assets/img/images/tom1.png);
+  background-repeat: no-repeat;
+}
+.g {
+  border: #FF4B91 solid 7px;
+  background-image: url(./assets/img/images/tom2.png);
+  background-repeat: no-repeat;
+}
+.h {
+  border: #F9D923 solid 7px;
+  background-image: url(./assets/img/images/tom3.png);
+  background-repeat: no-repeat;
+}
+.j {
+  border: #187498 solid 7px;
+  background-image: url(./assets/img/images/tom4.png);
+  background-repeat: no-repeat;
+}
+
+.pressed{
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
