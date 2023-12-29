@@ -54,7 +54,9 @@ document.addEventListener("keydown", handleKeyPress);
 // ```
 // This code sets up event listeners for both button clicks and key presses, triggering the `makeSound` function to play different sounds based on the key/button pressed.
 //* simon game Code
-
+// TODO: add some keyborde keypress event listener so it could be pleayed with 1 2 3 4 for example i think this will make it easier 
+// todo: compare it to other simon game and find if there is something extra i could add like the scoring 
+// todo: move the page to a different page or an isolated container
 var buttonColours = ["red", "blue", "green", "yellow"];
 
 var gamePattern = [];
