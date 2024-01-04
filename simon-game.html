@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <!-- Link to your stylesheets, Bootstrap, and other resources -->
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+  
+  <!-- Other content for your main page -->
+  <!-- A button to show/hide the Simon Game -->
+  <button onclick="toggleSimonGame()">Toggle Simon Game</button>
+  
+  <!-- Container for the Simon Game, initially hidden -->
+  <div class="simon-container" style="display: none;">
+    <h2 class="game-name" id="level-title"><span class="r2">Press</span> <span class="r1">A</span> <span class="r5">Key to</span> <span class="r3">Start</span></h2>
+    <div class="container-fluid container simon" id="simonGame">
+      <!-- Simon Game content goes here -->
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts at the bottom -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    // Function to toggle the visibility of the Simon Game container
+    function toggleSimonGame() {
+      const simonContainer = document.querySelector('.simon-container');
+      if (simonContainer.style.display === 'none') {
+        simonContainer.style.display = 'block';
+      } else {
+        simonContainer.style.display = 'none';
+      }
+    }
+
+    // Load navbar and footer content
+    $(function(){
+      $("#navbar-placeholder").load("./navbar.html");
+      $("#footer-placeholder").load("./footer.html");
+    });
+  </script>
+</body>
+</html>
