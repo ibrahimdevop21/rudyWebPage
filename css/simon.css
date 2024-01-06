@@ -1,0 +1,55 @@
+
+/*! simon game styles */
+body {
+  background-color: aqua;
+}
+
+#level-title {
+  font-family: 'Butterfly kids', cursive;
+  font-size: 7rem;
+  margin:  5%;
+  color: #e0c135;
+  margin-left: 25%;
+}
+
+.simon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+
+}
+
+.simon {
+  margin-left: 25%;
+}
+.row .btn {
+  margin: 2px;
+  padding: 2px;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}

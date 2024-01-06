@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rudy's Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="../css/simon.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
@@ -21,10 +21,10 @@
       <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item" id="drumKit">
-            <a class="nav-link active" aria-current="page" href="index.html">DrumKit</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Drum Kit</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="simon-game.html">SimonGame</a>
+            <a class="nav-link active" href="simon-game.html">Simon Game</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="piano.html">Piano</a>
@@ -40,22 +40,17 @@
       </div>
     </div>
   </nav> 
-  <div class="ballon star">
-    <div class="ballon1"><img src=""" alt=""></div>
-    <div class="ballon2"></div>
+  <h2 class="game-name" id="level-title"><span class="r2">Press</span> <span class="r1">A</span> <span class="r5">Key to</span> <span class="r3">Start</span></h2>
+<!-- TODO: i wonat change the style to be like a circle each div rep a qurter -->
+<div class="container-fluid container simon" id="simonGame">
+  <div class="grid">
+    <div id="green" class="btn green "><div class="a">a</div></div>
+    <div id="red" class="btn red"><div class="s">s</div></div>
+    <div id="yellow" class="btn yellow"><div class="d">d</div></div>
+    <div id="blue" class="btn blue"><div class="f">f</div></div>
   </div>
-  <h2 class="game-name"><span class="r1">Rudy</span><span class="r2">na</span><span class="r3">'s </span><span class="r4">Drum</span> <span class="r5">Kit</span></h2>
-  <div class="drum-kit container" id="drumKit">
-    <div class="a drum">a</div>
-    <div class="s drum">s</div>
-    <div class="d drum">d</div>
-    <div class="f drum">f</div>
-    <div class="g drum">g</div>
-    <div class="h drum">h</div>
-    <div class="j drum">j</div>
-  </div>
-
-  <footer class="py-3 my-4">
+</div>
+  <!-- <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
@@ -64,9 +59,9 @@
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
     </ul>
     <p class="text-center text-body-secondary">© 2023 Rudy's Work, Inc</p>
-  </footer>
+  </footer> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="./index.js" charset="UTF-8"></script>
+  <script src="../javascript/simon.js" charset="UTF-8"></script>
 </body>
 </html>

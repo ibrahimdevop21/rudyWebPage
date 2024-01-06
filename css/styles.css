@@ -1,0 +1,182 @@
+
+body {
+  text-align: center;
+  background-image: url(../assets/img/blue.jpg);
+  background-size: cover;
+}
+
+h2 {
+  font-family: 'Butterfly Kids', cursive;
+  font-size: 7rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.r1 {
+  color: #EB5353;
+}
+.r2 {
+  color: #F9D923;
+}
+.r3 {
+  color: #36AE7C;
+}
+.r4 {
+  color: #187498;
+}
+.r5 {
+  color: #FF4B91;
+}
+
+.drum-kit {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; 
+  flex-basis: 0 0 auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.drum {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: start;
+  font-family: 'Butterfly Kids', cursive;
+  font-weight: bolder;
+  color: #309cc7;
+}
+
+.a {
+  border:#08e778 solid 7px;
+  background-image: url(../assets/img/drumKit-images/crash.png);
+  font-size: 3rem;
+  text-align: center;
+}
+.s {
+  border: #EB5353 solid 7px;
+  background-image: url(../assets/img/drumKit-images/kick.png);
+  rl(../assets/img/drumKit-images/crash.png);
+  font-size: 3rem;
+  text-align: center;
+}
+.d {
+  border: #36AE7C solid 7px;
+  background-image: url(../assets/img/drumKit-images/snare.png);
+  rl(../assets/img/drumKit-images/crash.png);
+  font-size: 3rem;
+  text-align: center;
+}
+.f {
+  border: #F9D923 solid 7px;
+  background-image: url(../assets/img/drumKit-images/tom1.png);
+  rl(../assets/img/drumKit-images/crash.png);
+  font-size: 3rem;
+  text-align: center;
+}
+.g {
+  border: #FF4B91 solid 7px;
+  background-image: url(../assets/img/drumKit-images/tom2.png);
+  rl(../assets/img/drumKit-images/crash.png);
+  font-size: 3rem;
+  text-align: center;
+}
+.h {
+  border: #F9D923 solid 7px;
+  background-image: url(../assets/img/drumKit-images/tom3.png);
+  rl(../assets/img/drumKit-images/crash.png);
+  font-size: 3rem;
+  text-align: center;
+}
+.j {
+  border: #187498 solid 7px;
+  background-image: url(../assets/img/drumKit-images/tom4.png);
+  rl(../assets/img/drumKit-images/crash.png);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.alpha-pressed {
+  font-size: 7rem;
+  color: #ff0062;
+  outline: #00471b solid 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+  background-color: rgba(255, 75, 145, 0.1); /* Background color */
+  box-shadow: 0 0 10px rgba(255, 75, 145, 0.5); /* Box shadow */
+  transition: all 0.3s ease; /* Transition effect */
+}
+
+/*! piano styles */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+#piano {
+  background-color: #00471b;
+  width: 992px;
+  height: 290px;
+  margin: 80px auto;
+  padding: 90px 20px 0 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.keys {
+  background-color: #040404;
+  width: 949px;
+  height: 180px;
+  padding-left: 2px;
+  overflow: hidden;
+}
+
+.key {
+  background-color: #ffffff;
+  position: relative;
+  width: 41px;
+  height: 175px;
+  margin: 2px;
+  float: left;
+  border-radius: 0 0 3px 3px;
+}
+
+.key.black--key::after {
+  background-color: #1d1e22;
+  content: "";
+  position: absolute;
+  left: -18px;
+  width: 32px;
+  height: 100px;
+  border-radius: 0 0 3px 3px;
+}
+
+.logo {
+  width: 200px;
+  position: absolute;
+  top: 23px;
+}
+
+@media (max-width: 768px) {
+  #piano {
+    width: 358px;
+  }
+
+  .keys {
+    width: 318px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+
+}
